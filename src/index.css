@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap');
+@import 'tailwindcss';
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: #0a1510;
+  color: #e8f5eb;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  height: 100%;
+}
+
+#root { height: 100%; }
+
+:root {
+  /* Fundos */
+  --bg-base:     #0a1510;
+  --bg-deep:     #060e0a;
+  --bg-card:     #1a2d1e;
+  --bg-card2:    #162518;
+  --bg-hover:    #1e3323;
+  --bg-active:   #203825;
+
+  /* Bordas */
+  --bd:          #2d4a32;
+  --bd-subtle:   #1a2d1e;
+  --bd-gold:     #c9a84c40;
+
+  /* Acento dourado */
+  --gold:        #c9a84c;
+  --gold-dark:   #a07830;
+  --gold-bg:     #c9a84c12;
+  --gold-glow:   #c9a84c30;
+
+  /* Verde */
+  --green:       #4caf87;
+  --green-light: #7fd996;
+  --green-dim:   #2d6644;
+
+  /* Texto */
+  --tx:          #e8f5eb;
+  --tx2:         #9dbfa3;
+  --tx3:         #6b8c70;
+
+  /* Status */
+  --red:         #e74c3c;
+  --red-bg:      #e74c3c18;
+  --amber:       #f39c12;
+  --amber-bg:    #f39c1212;
+  --blue:        #3498db;
+  --blue-bg:     #3498db12;
+  --purple:      #9b59b6;
+  --purple-bg:   #9b59b612;
+
+  /* Shape */
+  --r-sm:  6px;
+  --r-md:  12px;
+  --r-lg:  16px;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bd); border-radius: 4px; }
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+@keyframes pulse-ring {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.15); }
+}
+
+@keyframes shimmer {
+  from { background-position: -200% center; }
+  to   { background-position:  200% center; }
+}
